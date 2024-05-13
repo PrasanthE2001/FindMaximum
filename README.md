@@ -24,13 +24,12 @@ def max_marks(marks):
 
 ii)	# To find the maximum marks using the list method max().
 ```Python
-def max_marks(marks):
-    large=marks[len(marks)-1]
-    marks.sort(reverse=True)
-    large=marks[0]
-    return large
-
-
+def max_marks(array):
+    max1=array[0]
+    for i in range(1,len(array)):
+        if max1<array[i]:
+           max1=array[i]
+    return max1
 ```
 
 iii) # To find the maximum marks without using builtin functions.
@@ -49,7 +48,7 @@ def max_marks(marks):
 
 ## Output:
 ![Screenshot (5)](https://github.com/PrasanthE2001/FindMaximum/assets/114572171/e1f6f6ce-0e3a-4a4f-8cbe-c0a8224a16c5)
-![Screenshot (6)](https://github.com/PrasanthE2001/FindMaximum/assets/114572171/a378ed26-fb7e-4e0b-bf43-09336dd76e86)
+![Screenshot (27)](https://github.com/PrasanthE2001/FindMaximum/assets/114572171/5c660dc1-e62f-4d95-9d52-03c8edeff85c)
 ![Screenshot (6)](https://github.com/PrasanthE2001/FindMaximum/assets/114572171/ab691f85-b6e6-497f-a9b7-eaf4c35b4951)
 
 
